@@ -107,6 +107,8 @@ export function Footer() {
 
 export function FAQ() {
     return (
+      <section id="faq">
+      <h1>FAQ (คำถามที่พบบ่อย)</h1>
       <Accordion.Root collapsible defaultValue={["a"]}>
       {items.map((item, index) => (
         <Accordion.Item key={index} value={item.value}>
@@ -120,6 +122,7 @@ export function FAQ() {
         </Accordion.Item>
       ))}
     </Accordion.Root>
+    </section>
     );
 }
 
